@@ -1,0 +1,72 @@
+/*
+font-family: 'Yatra One', cursive;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Yatra One',cursive;
+	background-color: #457b9d;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:  center;
+	max-height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	color: #F1F1EE;
+}
+
+
+.screen {
+	cursor: pointer; 
+	width: 40%;
+	background-color: #000 !important;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+}
+
+
+.controls {
+	background: #1D3557;
+	color:  #fff;
+	width: 40%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;		
+	display: flex;
+	justify-content:  center;
+	align-items: center;	
+	padding: 10px;
+}
+
+.controls .fa-play {
+	color: #f1faee;
+}
+
+.controls .fa-stop {
+	color: #dc3534;
+}
+
+.controls .fa-pause {
+	color: #fff;
+}
+.controls .btn {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+.btn focus {
+	outline: 0;
+}
+
+@media(max-width: 800px){
+	.screen,
+	.controls {
+		width:40%;
+	}
+}
