@@ -12,6 +12,11 @@
 	<p>Choose the currency and the amounts to get the exchange rate</p>
 
 	<div class="container">
+		<button id='test'> test fetch</button>
+		<pre id=response></pre>
+
+	</div>
+	<div class="container">
 		<div class="currency">
 			<select id="currency-one">
 				<option value="AED">AED</option>
@@ -40,7 +45,7 @@
 				<option value="ILS">ILS</option>
 				<option value="INR">INR</option>
 				<option value="ISK">ISK</option>
-				<option value="JPY">JPY</option>
+				<option value="JPY"selected>JPY</option>
 				<option value="KRW">KRW</option>
 				<option value="KZT">KZT</option>
 				<option value="MXN">MXN</option>
@@ -62,7 +67,7 @@
 				<option value="TRY">TRY</option>
 				<option value="TWD">TWD</option>
 				<option value="UAH">UAH</option>
-				<option value="USD" selected>USD</option>
+				<option value="USD">USD</option>
 				<option value="UYU">UYU</option>
 				<option value="VND">VND</option>
 				<option value="ZAR">ZAR</option>
@@ -77,7 +82,7 @@
 			</div>
 			
 			<div class="currency">
-				<select id="currency-two">
+				<select id="currency-two" >
 					<option value="AED">AED</option>
 					<option value="ARS">ARS</option>
 					<option value="AUD">AUD</option>
@@ -131,7 +136,7 @@
 					<option value="VND">VND</option>
 					<option value="ZAR">ZAR</option>
 				</select>
-			<input type="number" id="amount-two" placeholder="0">
+			<input type="number" id="amount-two" placeholder="10">
 	
 		</div>
 	</div>
