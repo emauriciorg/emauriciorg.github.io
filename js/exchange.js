@@ -21,9 +21,8 @@ function perform_fetch(currency_one,currency_two){
 			console.log(data); 
 			const rate= data.rates[currency_two];
 			console.log(rate);
+			rateEl.innerText=`1 ${currency_one} = ${rate} ${currency_two}`;
 	});
-
-
 }
 
 function calculate() {
@@ -54,3 +53,14 @@ currencyEl_one.addEventListener('change',calculate);
 currencyEl_two.addEventListener('change',calculate);
 amountEle_two.addEventListener('input',calculate);
 amountEle_one.addEventListener('input',calculate);
+swap.addEventListener('click',() =>{
+	const temp = currencyEl_one.value;
+	currencyEl_one.value = currencyEl_two.value;
+	currencyEl_two.value = temp;
+	
+	const temp_amount = amountEle_one.value ; 
+	amountEle_one.value = amountEle_two.value; 
+	amountEle_two.value = temp_amount;	
+	calculate();
+	
+});
