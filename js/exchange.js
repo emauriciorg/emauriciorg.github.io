@@ -23,7 +23,8 @@ function perform_fetch(currency_one,currency_two){
 			const rate= data.conversion_rates[currency_two];
 			console.log(rate);
 			rateEl.innerText=`1 ${currency_one} = ${rate} ${currency_two}`;
-	});
+			amountEle_two.value = (amountEle_one.value * rate).toFixed(2);
+		});
 }
 
 function calculate() {
