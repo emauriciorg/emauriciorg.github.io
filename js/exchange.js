@@ -6,7 +6,6 @@ const amountEle_two = document.getElementById('amount-two');
 const rateEl= document.getElementById('rate');
 const swap =  document.getElementById('swap');
 
-const test_button =  document.getElementById('test');
 
 
 function perform_fetch(currency_one,currency_two){
@@ -34,23 +33,8 @@ function calculate() {
 	perform_fetch(currency_one,currency_two);
 }
 
-/*
-GET https://data.fixer.io/api/latest
 
-{
-  "base": USD,
-  "date": "2018-02-13",
-  "rates": {
-     "CAD": 1.260046,
-     "CHF": 0.933058,
-     "EUR": 0.806942,
-     "GBP": 0.719154,
-     [170 world currencies]
-  }
-}  
-*/
 
-test_button.addEventListener('click',calculate);
 currencyEl_one.addEventListener('change',calculate);
 currencyEl_two.addEventListener('change',calculate);
 amountEle_two.addEventListener('input',calculate);
